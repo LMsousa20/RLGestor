@@ -57,7 +57,7 @@ async function excluir(idList) {
         headers: { "content-type": "application/json", }
     }
  
-    let envio = await fetch(`${linkApi}${idList}`, enviar)
+    let envio = await fetch(`${linkApi}/${idList}`, enviar)
 
     buscarFornecedores();
 }

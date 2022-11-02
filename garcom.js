@@ -54,14 +54,14 @@ async function adicionarProduto() {
 function precoUnitario(){
    
     let valorPedido = listaLocal.filter(valor => valor.produto === produtosLista.value)
-    let num1 = valorPedido[0].preco.toFixed(2)
+    let num1 = parseFloat(valorPedido[0].preco).toFixed(2)
     console.log(num1)
     precodoproduto.value = num1;
  }
 
 function calculandoPreco(){
    let valorPedido = listaLocal.filter(valor => valor.produto === produtosLista.value)
-   let num = valorPedido[0].preco * quantidade.value
+   let num = parseFloat(valorPedido[0].preco) * quantidade.value
    valor.value = num.toFixed(2);
    console.log(num)
 }
