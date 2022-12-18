@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+#containermenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+}
+
+#produtosLista {
+    background-color: rgb(196, 196, 196);
+    list-style-type: none;
+    color: black;
+    font-weight: 700;
+}
+
+.itens {
+    margin: 0;
+    padding: 7px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;   
+
+}
+
+.itens:hover , .itens:active{
+    border: 5px solid black;
+}
+
+
